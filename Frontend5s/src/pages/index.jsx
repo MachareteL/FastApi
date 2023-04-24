@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import logo from '../../public/boschLogo.png'
 
 export default function Home({ }) {
-  const [alunos, setAlunos] = useState([])
+  const [alunos, setAlunos] = useState([{Aprendiz: 'lucas'}])
 
-  useEffect(() => {
-    fetch('/api/peganome', {
-      method: 'GET',
-    }).then((res) => res.json()).then((rese) => setAlunos(rese))
-  }, [])
+  // useEffect(() => {
+  //   fetch('/api/peganome', {
+  //     method: 'GET',
+  //   }).then((res) => res.json()).then((rese) => setAlunos(rese))
+  // }, [])
 
 
 
