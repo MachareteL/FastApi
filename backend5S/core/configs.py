@@ -7,6 +7,4 @@ class Settings(BaseSettings):
     DB_BaseModel = declarative_base()
     class Config:
         case_sensitive = True
-
-if __name__ == '__main__':
-    settings = Settings()
+settings = Settings()
